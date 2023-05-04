@@ -1,0 +1,199 @@
+:root {
+  --beige: #fefae0;
+  --light-brown: #dda15e;
+  --light-green: #e9edc9;
+  --dark-brown: #bc6c25;
+  --dark-green: #283618;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  height: 100dvh;
+  background: var(--beige);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  place-content: center;
+}
+img {
+  height: 5rem;
+}
+.title {
+  text-align: center;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+.modal {
+  margin-top: 7rem;
+  height: 46rem;
+  max-width: 65rem;
+  overflow: hidden;
+  box-shadow: 1px 5px 10px gray;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.hidden {
+  opacity: 0;
+  z-index: -1;
+}
+.half {
+  width: 50%;
+}
+/* end of general styling*/
+/* Header Styling */
+.header {
+  background: var(--dark-green);
+  color: var(--beige);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* end header styling */
+/* Welcome modal styling */
+.welcome {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 0 4rem 0;
+}
+
+.sandwich-dice-container {
+  display: flex;
+  gap: 10rem;
+}
+.img-sandwich {
+  height: 20rem;
+}
+.img-dice {
+  height: 20rem;
+}
+.begin-btn {
+  height: fit-content;
+  border: none;
+  width: 30%;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 3rem;
+  background: var(--dark-green);
+  color: var(--beige);
+  font-family: "Cinzel", serif;
+}
+/* end modal styling */
+
+/* bread roll styling */
+.roll-modal {
+  display: flex;
+  flex-direction: column;
+}
+.bread-title {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  background: var(--light-brown);
+  height: 7rem;
+  margin: 0;
+}
+.roll-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.dice-roll-img {
+  height: 20rem;
+}
+
+.roll-dice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.roll-btn {
+  height: fit-content;
+  border: none;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 3rem;
+  background: var(--dark-green);
+  color: var(--beige);
+  font-family: "Cinzel", serif;
+}
+.roll-btn:hover {
+  background: var(--light-green);
+  color: var(--dark-green);
+}
+.roll-btn:active {
+  background: var(--dark-green);
+  color: var(--beige);
+  opacity: 80%;
+}
+
+.roll-sheet {
+  width: 85%;
+  height: 90%;
+  background: linen;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.roll-sheet-title {
+  text-align: center;
+}
+
+.roll-sheet-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  margin: 1rem;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 100px;
+  font-size: 2rem;
+  background: var(--dark-green);
+  color: var(--beige);
+  font-family: "Cinzel", serif;
+}
+.next-btn:hover {
+  background: var(--light-green);
+  color: var(--dark-green);
+}
+.next-btn:active {
+  background: var(--dark-green);
+  color: var(--beige);
+  opacity: 80%;
+}
+/* end bread roll styling */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roll for Sandwich!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1 class="title">ROLL FOR SANDWICH</h1>
+      </header>
+      <section class="roll-modal modal absolute-center">
+        <div class="bread-title">
+          <h1>Bread</h1>
+          <img class="bread-icon" src="images/bread-loaf-svgrepo-com.svg" />
+        </div>
+
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img class="dice-roll-img" src="dice-images/dice1.svg" />
+            <button class="bread-roll roll-btn">ROLL DICE</button>
+          </div>
+
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="choice0">Uncrustables</li>
+                <li class="choice1">White</li>
+                <li class="choice2">12 Grain</li>
+                <li class="choice3">Potato</li>
+                <li class="choice4">Rye</li>
+                <li class="choice5">Sourdough</li>
+              </ol>
+              <button class="next-btn bread-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--WELCOME-->
+      <section class="welcome modal absolute-center">
+        <h1>Welcome to Roll For Sandwich!</h1>
+        <div class="sandwich-dice-container">
+          <img class="img-sandwich" src="images/dice-5-svgrepo-com (1).svg" />
+          <img class="img-dice" src="images/sandwich-svgrepo-com.svg" />
+        </div>
+        <button class="begin-btn">Begin?</button>
+      </section>
+      <!--WELCOME END-->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
