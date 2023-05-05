@@ -19,9 +19,145 @@
         <h1 class="title">ROLL FOR SANDWICH</h1>
       </header>
 
+      <!--sauce modal-->
+      <section class="hidden sauce-modal roll-modal modal absolute-center">
+        <div class="modal-title sauce-title">
+          <h1>Sauce</h1>
+          <img class="sauce-icon" src="images/sauce-bottle-svgrepo-com.svg" />
+        </div>
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img
+              class="sauce-dice-roll-img dice-roll-img"
+              src="dice-images/dice5.svg"
+            />
+            <button class="sauce-roll roll-btn">ROLL DICE</button>
+          </div>
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="saucechoice0 choice">Marshmallow Fluff</li>
+                <li class="saucechoice1 choice">Ketchup</li>
+                <li class="saucechoice2 choice">Mayo</li>
+                <li class="saucechoice3 choice">Canes Sauce</li>
+                <li class="saucechoice4 choice">Canola Oil</li>
+                <li class="saucechoice5 choice">Maple Syrup</li>
+              </ol>
+              <button class="next-btn sauce-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--sauce modal end-->
+
+      <!--wild modal-->
+      <section class="hidden wild-modal roll-modal modal absolute-center">
+        <div class="modal-title wild-title">
+          <h1>Wild Magic</h1>
+          <img class="wild-icon" src="images/question-1445-svgrepo-com.svg" />
+        </div>
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img
+              class="wild-dice-roll-img dice-roll-img"
+              src="dice-images/dice5.svg"
+            />
+            <button class="wild-roll roll-btn">ROLL DICE</button>
+          </div>
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="wildchoice0 choice">Popcorn</li>
+                <li class="wildchoice1 choice">MORE Beans</li>
+                <li class="wildchoice2 choice">Home Depot Chocolate</li>
+                <li class="wildchoice3 choice">Boneless Wings</li>
+                <li class="wildchoice4 choice">Fried Tofu</li>
+                <li class="wildchoice5 choice">Burger Patty</li>
+              </ol>
+              <button class="next-btn wild-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--wild modal end-->
+
+      <!--roughage modal-->
+      <section class="hidden roughage-modal roll-modal modal absolute-center">
+        <div class="modal-title roughage-title">
+          <h1>roughage</h1>
+          <img class="roughage-icon" src="images/lettuce-svgrepo-com.svg" />
+        </div>
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img
+              class="roughage-dice-roll-img dice-roll-img"
+              src="dice-images/dice5.svg"
+            />
+            <button class="roughage-roll roll-btn">ROLL DICE</button>
+          </div>
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="roughagechoice0 choice">Lettuce</li>
+                <li class="roughagechoice1 choice">Tomato</li>
+                <li class="roughagechoice2 choice">Kimchi</li>
+                <li class="roughagechoice3 choice">Raisins</li>
+                <li class="roughagechoice4 choice">A Wet Sock</li>
+                <li class="roughagechoice5 choice">Onions</li>
+              </ol>
+              <button class="next-btn roughage-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--roughage modal end-->
+
+      <!--Cheese modal-->
+      <section class="hidden cheese-modal roll-modal modal absolute-center">
+        <div class="modal-title cheese-title">
+          <h1>cheese</h1>
+          <img class="cheese-icon" src="images/cheese-svgrepo-com.svg" />
+        </div>
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img
+              class="cheese-dice-roll-img dice-roll-img"
+              src="dice-images/dice5.svg"
+            />
+            <button class="cheese-roll roll-btn">ROLL DICE</button>
+          </div>
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="cheesechoice0 choice">Cheddar</li>
+                <li class="cheesechoice1 choice">Gouda</li>
+                <li class="cheesechoice2 choice">Swiss</li>
+                <li class="cheesechoice3 choice">Provolone</li>
+                <li class="cheesechoice4 choice">Brie</li>
+                <li class="cheesechoice5 choice">Vegan</li>
+              </ol>
+              <button class="next-btn cheese-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Cheese modal end-->
+
       <!--Main modal-->
-      <section class="main-modal roll-modal modal absolute-center">
-        <div class="main-title">
+      <section class="hidden main-modal roll-modal modal absolute-center">
+        <div class="modal-title main-title">
           <h1>Main</h1>
           <img class="main-icon" src="images/salami-svgrepo-com.svg" />
         </div>
@@ -56,7 +192,7 @@
       <!--Main modal end-->
       <!--Bread modal-->
       <section class="hidden bread-modal roll-modal modal absolute-center">
-        <div class="bread-title">
+        <div class="modal-title">
           <h1>Bread</h1>
           <img class="bread-icon" src="images/bread-loaf-svgrepo-com.svg" />
         </div>

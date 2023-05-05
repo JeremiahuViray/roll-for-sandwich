@@ -5,6 +5,7 @@
   --dark-brown: #bc6c25;
   --dark-green: #283618;
   --light-red: #f28482;
+  --olive-green: #588157;
 }
 
 body {
@@ -101,8 +102,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-.bread-title,
-.main-title {
+.modal-title {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -115,6 +115,15 @@ img {
 }
 .main-title {
   background: var(--light-red);
+}
+.cheese-title {
+  background: #e9c46a;
+}
+.roughage-title {
+  background: var(--olive-green);
+}
+.wild-title {
+  background: #6d6875;
 }
 .roll-container {
   display: flex;
