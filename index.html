@@ -18,7 +18,44 @@
       <header class="header">
         <h1 class="title">ROLL FOR SANDWICH</h1>
       </header>
-      <section class="roll-modal modal absolute-center">
+
+      <!--Main modal-->
+      <section class="main-modal roll-modal modal absolute-center">
+        <div class="main-title">
+          <h1>Main</h1>
+          <img class="main-icon" src="images/salami-svgrepo-com.svg" />
+        </div>
+
+        <div class="roll-container">
+          <!--Left Side-->
+          <div class="half roll-dice">
+            <img
+              class="main-dice-roll-img dice-roll-img"
+              src="dice-images/dice5.svg"
+            />
+            <button class="main-roll roll-btn">ROLL DICE</button>
+          </div>
+
+          <!--Right Side-->
+          <div class="half">
+            <div class="roll-sheet">
+              <h1 class="roll-sheet-title">ROLL</h1>
+              <ol class="roll-sheet-items">
+                <li class="mainchoice0 choice">Cat Food</li>
+                <li class="mainchoice1 choice">Salami</li>
+                <li class="mainchoice2 choice">Peanut Butter</li>
+                <li class="mainchoice3 choice">Black Forest Ham</li>
+                <li class="mainchoice4 choice">Roast Beef</li>
+                <li class="mainchoice5 choice">Beans</li>
+              </ol>
+              <button class="next-btn main-next hidden">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Main modal end-->
+      <!--Bread modal-->
+      <section class="hidden bread-modal roll-modal modal absolute-center">
         <div class="bread-title">
           <h1>Bread</h1>
           <img class="bread-icon" src="images/bread-loaf-svgrepo-com.svg" />
@@ -27,7 +64,10 @@
         <div class="roll-container">
           <!--Left Side-->
           <div class="half roll-dice">
-            <img class="dice-roll-img" src="dice-images/dice1.svg" />
+            <img
+              class="bread-dice-roll-img dice-roll-img"
+              src="dice-images/dice4.svg"
+            />
             <button class="bread-roll roll-btn">ROLL DICE</button>
           </div>
 
@@ -36,19 +76,19 @@
             <div class="roll-sheet">
               <h1 class="roll-sheet-title">ROLL</h1>
               <ol class="roll-sheet-items">
-                <li class="choice0">Uncrustables</li>
-                <li class="choice1">White</li>
-                <li class="choice2">12 Grain</li>
-                <li class="choice3">Potato</li>
-                <li class="choice4">Rye</li>
-                <li class="choice5">Sourdough</li>
+                <li class="breadchoice0 choice">Uncrustables</li>
+                <li class="breadchoice1 choice">White</li>
+                <li class="breadchoice2 choice">12 Grain</li>
+                <li class="breadchoice3 choice">Potato</li>
+                <li class="breadchoice4 choice">Rye</li>
+                <li class="breadchoice5 choice">Sourdough</li>
               </ol>
               <button class="next-btn bread-next hidden">Next</button>
             </div>
           </div>
         </div>
       </section>
-
+      <!--Bread Modal end-->
       <!--WELCOME-->
       <section class="welcome modal absolute-center">
         <h1>Welcome to Roll For Sandwich!</h1>
